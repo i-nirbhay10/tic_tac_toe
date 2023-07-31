@@ -46,19 +46,19 @@ const Board = () => {
         <h3> Welcome to tic-tac-toe game</h3>
 
         <div className="board_row">
-          <Block onClick={() => clicked(0)} value={state[0]} />
-          <Block onClick={() => clicked(1)} value={state[1]} />
-          <Block onClick={() => clicked(2)} value={state[2]} />
+          <Block pl={0} pt={0} onClick={() => clicked(0)} value={state[0]} />
+          <Block pt={0} onClick={() => clicked(1)} value={state[1]} />
+          <Block pr={0} pt={0} onClick={() => clicked(2)} value={state[2]} />
         </div>
         <div className="board_row">
-          <Block onClick={() => clicked(3)} value={state[3]} />
+          <Block pl={0} onClick={() => clicked(3)} value={state[3]} />
           <Block onClick={() => clicked(4)} value={state[4]} />
-          <Block onClick={() => clicked(5)} value={state[5]} />
+          <Block pr={0} onClick={() => clicked(5)} value={state[5]} />
         </div>
         <div className="board_row">
-          <Block onClick={() => clicked(6)} value={state[6]} />
-          <Block onClick={() => clicked(7)} value={state[7]} />
-          <Block onClick={() => clicked(8)} value={state[8]} />
+          <Block pl={0} pb={0} onClick={() => clicked(6)} value={state[6]} />
+          <Block pb={0} onClick={() => clicked(7)} value={state[7]} />
+          <Block pr={0} pb={0} onClick={() => clicked(8)} value={state[8]} />
         </div>
         <h4>
           {win ? (

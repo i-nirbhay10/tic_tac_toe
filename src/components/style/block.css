@@ -1,8 +1,13 @@
 .block {
   width: 100px;
   height: 100px;
-  border: 1px solid red;
+  border: 2px solid red;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: steelblue;
+}
+
+.block:hover {
+  background-color: rgba(207, 30, 148, 0.171);
 }
